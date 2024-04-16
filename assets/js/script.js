@@ -35,3 +35,13 @@ function startGame() {
 
     console.log(gameboard)
 }
+
+//Function to click tile.
+
+//Function to check if theres a mine.
+
+//Function to use the flag button.
+
+//function to reset game when button clicked.
+
+//
