@@ -10,10 +10,15 @@ var flagEnabled = false; //This is used to dictate whether we have clicked the f
 
 var gameOver = false; //Used to decide whether game is over yet.
 
-window.onload = function() { //Will initially start the game when we load the webpage.
+//Will initially start the game when we load the webpage.
+window.onload = function() { 
     startGame();
 }
 
+//Function to start game.
 function startGame() {
+    // Passing in the amount of mines to the HTML.
     document.getElementById("mines-count").innerHTML = minesCount;
+
+    //Populating the board with cells
 }
