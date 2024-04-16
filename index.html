@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Sweeper</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+<!--Banner showing rules of the game-->
+<div class="game-banner">
+    <h1>Click to View Rules</h1>
+    <p id="gameRules" style="display: none;">
+    Game Rules
+    </p>
+</div>
+
+<!--Div containing the game, gameboard and score-->
+<div class="game-container">
+    <div class="game-controls">
+        <button id="newGameButton">New Game</button>
+        <div class="score">Score: <span id="score">0</span></div>
+    </div>
+    <div class="game-board" id="gameBoard"></div>
+</div>
+
+<script src="/assets/js/script.js"></script>
+</body>
+</html>
