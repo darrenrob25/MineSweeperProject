@@ -43,5 +43,3 @@ function startGame() {
 //Function to use the flag button.
 
 //function to reset game when button clicked.
-
-//

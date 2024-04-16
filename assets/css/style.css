@@ -35,6 +35,8 @@ align-items: center;
     font-size: 35px;
     background-color: lightgray;
     border: none;
+    cursor:pointer;
+    
 }
 
 #flag-button:hover, 
