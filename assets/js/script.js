@@ -1,4 +1,4 @@
-var board = [];
+var gameboard = [];
 var rows = 8;
 var columns = 8;
 
