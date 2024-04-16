@@ -21,4 +21,12 @@ function startGame() {
     document.getElementById("mines-count").innerHTML = minesCount;
 
     //Populating the board with cells
+    for (let x = 0; x < rows; x++) {
+        let row = [];
+        for (let y = 0; y < columns; y++) {
+            //Setting Div id's to grid co-ordinates.
+            let tile = document.createElement("div");
+            tile.id = x.toString() + "-" + y.toString();
+        }
+    }
 }
