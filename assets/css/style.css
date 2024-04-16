@@ -36,3 +36,8 @@ align-items: center;
     background-color: lightgray;
     border: none;
 }
+
+#flag-button:hover, 
+#new-game:hover {
+    background-color: rgb(173, 172, 172);
+}

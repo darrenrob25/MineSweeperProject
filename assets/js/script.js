@@ -15,5 +15,5 @@ window.onload = function() { //Will initially start the game when we load the we
 }
 
 function startGame() {
-    
+    document.getElementById("mines-count").innerHTML = minesCount;
 }
