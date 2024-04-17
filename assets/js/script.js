@@ -63,6 +63,15 @@ function clickTile() {
     }
 }
 
+//Function to create mines.
+function createMines() {
+    minesLocation.push("2-1")
+    minesLocation.push("2-5")
+    minesLocation.push("2-8")
+    minesLocation.push("3-3")
+    minesLocation.push("5-2")
+}
+
 //Function to check if theres a mine.
 
 //Function to use the flag button.
