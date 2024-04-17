@@ -33,7 +33,7 @@ function startGame() {
         }
         gameboard.push(row);
     }
-    console.log(gameboard)
+    console.log(gameboard);
 }
 
 //Function to click tile.
@@ -44,7 +44,7 @@ function clickTile() {
             tile.innerHTML = "🚩";
         }
         else if (tile.innerHTML == "🚩") {
-            
+
         }
     }
 }
