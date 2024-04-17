@@ -60,6 +60,7 @@ function clickTile() {
         else if (tile.innerHTML == "🚩") {
             tile.innerHTML = "";
         }
+        
     }
 }
 
