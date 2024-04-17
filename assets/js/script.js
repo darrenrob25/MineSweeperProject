@@ -29,6 +29,7 @@ function startGame() {
             tile.id = x.toString() + "-" + y.toString();
             document.getElementById("gameboard").append(tile);
             row.push(tile);
+            tile.addEventListener("click", clickTile);
         }
         gameboard.push(row);
     }
