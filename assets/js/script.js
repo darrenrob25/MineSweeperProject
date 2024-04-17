@@ -39,6 +39,14 @@ function startGame() {
 //Function to click tile.
 function clickTile() {
     let tile = this;
+    if (flagEnabled) {
+        if (tile.innerHTML == "") {
+            tile.innerHTML = "🚩";
+        }
+        else if (tile.innerHTML == "🚩") {
+            
+        }
+    }
 }
 
 //Function to check if theres a mine.
