@@ -60,7 +60,13 @@ function clickTile() {
         else if (tile.innerHTML == "🚩") {
             tile.innerHTML = "";
         }
-        
+        //to stop mine being triggered when adding a flag.
+        return;
+    }
+    if (minesLocation.includes(tile.id)) {
+        alert("You hit a mine!");
+        gameOver = true;
+        return;
     }
 }
 
