@@ -12,8 +12,10 @@ var gameOver = false; //Used to decide whether game is over yet.
 
 //Event for the flag button.
 function setFlag() {
-    if (flagEnabled) = false;
-    
+    if (flagEnabled) {
+        flagEnabled = false;
+        document.getElementById("flag-button").style.backgroundColor = "rgb(173, 172, 172)";
+    }
 }
 
 //Will initially start the game when we load the webpage.
