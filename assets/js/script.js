@@ -32,11 +32,13 @@ function startGame() {
         }
         gameboard.push(row);
     }
-
     console.log(gameboard)
 }
 
 //Function to click tile.
+function clickTile() {
+    let tile = this;
+}
 
 //Function to check if theres a mine.
 
