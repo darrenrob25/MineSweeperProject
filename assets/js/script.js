@@ -10,6 +10,12 @@ var flagEnabled = false; //This is used to dictate whether we have clicked the f
 
 var gameOver = false; //Used to decide whether game is over yet.
 
+//Event for the flag button.
+function setFlag() {
+    if (flagEnabled) = false;
+    
+}
+
 //Will initially start the game when we load the webpage.
 window.onload = function() { 
     startGame();
@@ -44,7 +50,7 @@ function clickTile() {
             tile.innerHTML = "🚩";
         }
         else if (tile.innerHTML == "🚩") {
-
+            tile.innerHTML = "";
         }
     }
 }
