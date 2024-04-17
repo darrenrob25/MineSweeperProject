@@ -14,6 +14,10 @@ var gameOver = false; //Used to decide whether game is over yet.
 function setFlag() {
     if (flagEnabled) {
         flagEnabled = false;
+        document.getElementById("flag-button").style.backgroundColor = "lightgray";
+    }
+    else {
+        flagEnabled = true;
         document.getElementById("flag-button").style.backgroundColor = "rgb(173, 172, 172)";
     }
 }
@@ -27,6 +31,7 @@ window.onload = function() {
 function startGame() {
     // Passing in the amount of mines to the HTML.
     document.getElementById("mines-count").innerHTML = minesCount;
+    document.getElementById("flag-button").addEventListener("click", setFlag);
 
     //Populating the gameboard with cells
     for (let x = 0; x < rows; x++) {
