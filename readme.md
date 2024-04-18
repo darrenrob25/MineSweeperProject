@@ -10,7 +10,7 @@ The live link can be found at - [Mine Sweeper](https://google.com/)
 ### Project Goals
 * The goal of this project is to make a fun recreation of the minesweeper game within the browser.
 
-* It has beeen designed for people who want to keep coming back to gain better scores.
+* It has beeen designed to be easy to play and enjoyable.
 
 ### User Stories
 #### First Time User
@@ -29,6 +29,5 @@ The live link can be found at - [Mine Sweeper](https://google.com/)
 ### Wireframes
 Below are the designs that I will use as a reference point to help build the site. I have built these designs while keeping in mind the needs of my user stories.
 
-#### Index Page Design
-
 #### Game Page Design
+![Wireframe Design](assets/media/Wireframe.png)
