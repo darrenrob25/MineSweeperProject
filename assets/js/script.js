@@ -34,6 +34,7 @@ function startGame() {
     // Passing in the amount of mines to the HTML.
     document.getElementById("mines-count").innerHTML = minesCount;
     document.getElementById("flag-button").addEventListener("click", setFlag);
+    document.getElementById("instructions").addEventListener("click", showInstructions);
     document.getElementById("new-game").addEventListener("click", function() {
         window.location.reload();
     });
@@ -141,3 +142,15 @@ function checkTile(x, c) {
 //Function to use the flag button.
 
 //function to reset game when button clicked.
+
+//Function to display instructions.
+function showInstructions () {
+    let gameBoard = document.getElementById("gameboard");
+    if (gameBoard) {
+        let htmlContent="Game Instructions placeholder text";
+
+        gameBoard.innerHTML = htmlContent;
+    } else {
+        console.error ("Element with ID `gameboard' not found.");
+    }
+}
