@@ -42,8 +42,14 @@ h1 {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+#instruction-area {
+    padding-top: 30px;
+}
+
 #instructions {
+    font-size: 25px;
     animation-name: blinkingText;
+    cursor: pointer;
     animation-duration: 1.0s;
     animation-iteration-count: infinite;
 }
