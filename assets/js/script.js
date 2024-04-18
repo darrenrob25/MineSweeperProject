@@ -73,9 +73,9 @@ function clickTile() {
 
 //Function to create mines.
 function createMines() {
-    minesLocation.push("2-1")
+    minesLocation.push("0-0")
     minesLocation.push("2-5")
-    minesLocation.push("2-8")
+    minesLocation.push("2-7")
     minesLocation.push("3-3")
     minesLocation.push("5-2")
 }
@@ -83,8 +83,12 @@ function createMines() {
 // Function to show mines when game over.
 function showMines() {
     for (let x = 0; x < rows; x++) {
-        for (let y = 0; < columns; y++) {
+        for (let y = 0; y < columns; y++) {
             let tile = gameboard[x][y];
+            if (minesLocation.includes(tile.id)) {
+                tile.innerHTML = "💣";
+                tile.style.backgroundColor="red";
+            }
         }
     }
 }
