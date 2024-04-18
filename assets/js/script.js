@@ -66,6 +66,7 @@ function clickTile() {
     if (minesLocation.includes(tile.id)) {
         alert("You hit a mine!");
         gameOver = true;
+        showMines()
         return;
     }
 }
