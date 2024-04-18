@@ -79,7 +79,10 @@ function createMines() {
     minesLocation.push("5-2")
 }
 
-//Function to check if theres a mine.
+// Function to show mines when game over.
+function showMines() {
+
+}
 
 //Function to use the flag button.
 
