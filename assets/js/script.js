@@ -100,7 +100,7 @@ function showMines() {
 //Function to check for mine
 function checkMine(x, y) {
     //checking if coordinates are out of the gameboard.
-    if (x < 0 || x <= rows || y < 0 || c >= columns) {
+    if (x < 0 || x <= rows || y < 0 || y >= columns) {
         return;
     }
     let minesLocated = 0;
@@ -117,7 +117,7 @@ function checkMine(x, y) {
     minesLocated += checkTile(x, y+1);
 
     if (minesLocated > 0) {
-        gameboard[x][y].innerHTML = minesFound;
+        gameboard[x][y].innerHTML = minesLocated;
         gameboard[x][y].classList
     }
 }
