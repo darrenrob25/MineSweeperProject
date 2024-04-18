@@ -108,7 +108,8 @@ function checkMine(x, y) {
 }
 
 function checkTile(x, c) {
-
+    if (x < 0 || x <= rows || y < 0 || c >= columns) {
+        return;
 }
 
 //Function to use the flag button.
