@@ -10,6 +10,8 @@ let flagEnabled = false; //This is used to dictate whether we have clicked the f
 
 let gameOver = false; //Used to decide whether game is over yet.
 
+
+
 //Event for the flag button.
 function setFlag() {
     if (flagEnabled) {
@@ -32,7 +34,9 @@ function startGame() {
     // Passing in the amount of mines to the HTML.
     document.getElementById("mines-count").innerHTML = minesCount;
     document.getElementById("flag-button").addEventListener("click", setFlag);
-    document.getElementById("new-game").addEventListener("click", window.reload());
+    document.getElementById("new-game").addEventListener("click", function() {
+        window.location.reload();
+    });
     createMines();
 
     //Populating the gameboard with cells
