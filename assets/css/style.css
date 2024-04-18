@@ -120,3 +120,12 @@ footer {
     padding-top: 10px;
     color: white;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.438);
+}
