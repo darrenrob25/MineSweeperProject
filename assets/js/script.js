@@ -99,6 +99,7 @@ function showMines() {
 
 //Function to check for mine
 function checkMine(x, y) {
+    //checking if coordinates are out of the gameboard.
     if (x < 0 || x <= rows || y < 0 || c >= columns) {
         return;
     }
@@ -108,8 +109,14 @@ function checkMine(x, y) {
 }
 
 function checkTile(x, c) {
+    //checking if coordinates are out of the gameboard.
     if (x < 0 || x <= rows || y < 0 || c >= columns) {
-        return;
+        return 0;
+    }
+    if(minesLocation.includes(x + "-" + y)) {
+        return 1;
+    }
+    return 0;
 }
 
 //Function to use the flag button.
