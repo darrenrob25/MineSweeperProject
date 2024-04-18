@@ -1,14 +1,14 @@
-var gameboard = [];
-var rows = 8;
-var columns = 8;
+let gameboard = [];
+let rows = 8;
+let columns = 8;
 
 let minesCount = 5; //Total number of mines in game.
-var minesLocation = []; //grid co-ordinates of mines.
+let minesLocation = []; //grid co-ordinates of mines.
 
-var tilesClicked = 0; // total number of tiles clicked.
-var flagEnabled = false; //This is used to dictate whether we have clicked the flag button and whether its activated.
+let tilesClicked = 0; // total number of tiles clicked.
+let flagEnabled = false; //This is used to dictate whether we have clicked the flag button and whether its activated.
 
-var gameOver = false; //Used to decide whether game is over yet.
+let gameOver = false; //Used to decide whether game is over yet.
 
 //Event for the flag button.
 function setFlag() {
@@ -104,8 +104,22 @@ function checkMine(x, y) {
         return;
     }
     let minesLocated = 0;
-    //locate top 3 tiles
+    //locate mines
     minesLocated += checkTile(x-1, y-1);
+    minesLocated += checkTile(x-1, y);
+    minesLocated += checkTile(x-1, y+1);
+
+    minesLocated += checkTile(x+1, y-1);
+    minesLocated += checkTile(x+1, y);
+    minesLocated += checkTile(x+1, y+1);
+
+    minesLocated += checkTile(x, y-1);
+    minesLocated += checkTile(x, y+1);
+
+    if (minesLocated > 0) {
+        gameboard[x][y].innerHTML = minesFound;
+        gameboard[x][y].classList
+    }
 }
 
 function checkTile(x, c) {
