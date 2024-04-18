@@ -69,6 +69,9 @@ function clickTile() {
         showMines();
         return;
     }
+    let coordinates = tile.id.split("-"); //will return the co-ordinates as an array.
+    let x = parseInt(coordinates[0]);
+    let y = parseInt(coordinates[1]);
 }
 
 //Function to create mines.
@@ -91,6 +94,11 @@ function showMines() {
             }
         }
     }
+}
+
+//Function to check for mine
+function checkMine() {
+    
 }
 
 //Function to use the flag button.
