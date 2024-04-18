@@ -144,13 +144,22 @@ function checkTile(x, c) {
 //function to reset game when button clicked.
 
 //Function to display instructions.
-function showInstructions () {
+function showInstructions() {
     let gameBoard = document.getElementById("gameboard");
     if (gameBoard) {
-        let htmlContent="Game Instructions placeholder text";
+        let htmlContent = "<h3>How to Play</h3><p>Start by clicking on a square in the grid. Each square will either reveal a number (indicating how many mines are adjacent) or a mine (which means you lose).</p><p>You can mark suspected mines with flags using the flag button. Win the game by revealing all non-mine squares.</p><h4>Good luck!</h4><br><h5 id='closeButton'>Close</h5>";
 
         gameBoard.innerHTML = htmlContent;
+
+        // Added event listener to the "Close" button
+        let closeButton = document.getElementById("closeButton");
+        if (closeButton) {
+            closeButton.addEventListener("click", function() {
+                // Reload the page to hide instructions
+                location.reload();
+            });
+        }
     } else {
-        console.error ("Element with ID `gameboard' not found.");
+        console.error("Element with ID 'gameboard' not found.");
     }
 }
