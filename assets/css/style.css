@@ -109,3 +109,14 @@ align-items: center;
 #new-game:hover {
     background-color: rgb(173, 172, 172);
 }
+
+footer {
+    background-image:url(/assets/media/banner-bg2.jpg);
+    padding-bottom: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 10px;
+    color: white;
+}
