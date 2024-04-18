@@ -66,7 +66,7 @@ function clickTile() {
     if (minesLocation.includes(tile.id)) {
         alert("You hit a mine!");
         gameOver = true;
-        showMines()
+        showMines();
         return;
     }
 }
@@ -82,7 +82,11 @@ function createMines() {
 
 // Function to show mines when game over.
 function showMines() {
-
+    for (let x = 0; x < rows; x++) {
+        for (let y = 0; < columns; y++) {
+            let tile = gameboard[x][y];
+        }
+    }
 }
 
 //Function to use the flag button.
