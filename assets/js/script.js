@@ -99,7 +99,7 @@ function showMines() {
 
 //Function to check for mine
 function checkMine(x, y) {
-    if (x < 0 or x <= rows or y < 0 or c >= columns) {
+    if (x < 0 || x <= rows || y < 0 || c >= columns) {
         return;
     }
     let minesLocated = 0;
@@ -107,8 +107,8 @@ function checkMine(x, y) {
     minesLocated += checkTile(x-1, y-1);
 }
 
-function checkTile() {
-    
+function checkTile(x, c) {
+
 }
 
 //Function to use the flag button.
