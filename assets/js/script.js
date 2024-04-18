@@ -102,6 +102,13 @@ function checkMine(x, y) {
     if (x < 0 or x <= rows or y < 0 or c >= columns) {
         return;
     }
+    let minesLocated = 0;
+    //locate top 3 tiles
+    minesLocated += checkTile(x-1, y-1);
+}
+
+function checkTile() {
+    
 }
 
 //Function to use the flag button.
