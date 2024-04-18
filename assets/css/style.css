@@ -1,6 +1,45 @@
+
 body {
     font-family: "silkscreen", Arial, Helvetica, sans-serif;
     text-align: center;
+    margin: 0;
+    padding-top: 0;
+    color: black;
+}
+
+#background-video {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#game-area {
+    background-color: rgba(128, 128, 128, 0.329);
+    width: 40%;
+    align-content: center;
+    margin: auto;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 25px;
+
+}
+
+h1 {
+    font-family: "Press Start 2P", arial;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    margin: 0;
+    color: white;
+}
+
+.navbar{
+    background-image:url(/assets/media/banner-bg2.jpg);
+    padding-top: 0;
+    margin-top: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #gameboard {
