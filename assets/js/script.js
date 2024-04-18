@@ -32,6 +32,7 @@ function startGame() {
     // Passing in the amount of mines to the HTML.
     document.getElementById("mines-count").innerHTML = minesCount;
     document.getElementById("flag-button").addEventListener("click", setFlag);
+    document.getElementById("new-game").addEventListener("click", window.reload());
     createMines();
 
     //Populating the gameboard with cells
