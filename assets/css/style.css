@@ -39,12 +39,12 @@ h3 {
     text-align: center;
 }
 
-h5 {
+#closeButton {
     text-align: center;
     cursor: pointer;
 }
 
-h5:hover {
+#closeButton:hover {
     color: white;
 }
 .navbar {

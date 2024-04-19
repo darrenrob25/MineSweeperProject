@@ -173,12 +173,19 @@ function checkTile(x, y) {
 function showInstructions() {
     let gameboard = document.getElementById("gameboard");
     if (gameboard) {
+        // Set CSS styles for gameboard container
+        gameboard.style.display = "flex";
+        gameboard.style.flexDirection = "column";
+        gameboard.style.justifyContent = "center";
+        gameboard.style.alignItems = "center";
+        gameboard.style.textAlign = "center";
+
         let htmlContent = `
-            <h3>How to Play</h3>
+            <h3 style="margin-bottom: 10px;">How to Play</h3>
             <p>Start by clicking on a square in the grid. Each square will either reveal a number (indicating how many mines are adjacent) or a mine (which means you lose).</p>
             <p>You can mark suspected mines with flags using the flag button. Win the game by revealing all non-mine squares.</p>
             <br>
-                <h5 id="closeButton">Close</h5>
+            <h5 id="closeButton">Close</p>
         `;
 
         gameboard.innerHTML = htmlContent;
