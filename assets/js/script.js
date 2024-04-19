@@ -126,6 +126,11 @@ function checkMine(x, y) {
         gameboard[x][y].innerHTML = minesLocated;
         gameboard[x][y].classList
     }
+
+    if (minesLocated > 0) {
+        board[x][y].innerHTML = minesLocated;
+        board[x][y].classList
+    }
 }
 
 function checkTile(x, c) {
