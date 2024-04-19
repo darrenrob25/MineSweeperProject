@@ -129,3 +129,36 @@ a {
 a:hover {
     color: rgba(255, 255, 255, 0.438);
 }
+
+/*Classes for cell number colours*/
+.c1 {
+    color: blue;
+}
+
+.c2 {
+    color: green;
+}
+
+.c3 {
+    color: yellow;
+}
+
+.c4 {
+    color: orange;
+}
+
+.c5 {
+    color: red;
+}
+
+.c6 {
+    color: brown;
+}
+
+.c7 {
+    color: darkgray;
+}
+
+.c8 {
+    color: black;
+}
