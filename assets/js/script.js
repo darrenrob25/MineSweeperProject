@@ -94,7 +94,7 @@ while (remainingMines > 0) {
     // Loop utilised to stop mines being generated on the same square.
     if (!minesLocation.includes(id)) {
         minesLocation.push(id);
-        minesLeft -= 1;
+        remainingMines -= 1;
     }
 }
 }
