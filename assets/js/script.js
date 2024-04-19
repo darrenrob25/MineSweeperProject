@@ -123,13 +123,8 @@ function checkMine(x, y) {
     minesLocated += checkTile(x, y+1);
 
     if (minesLocated > 0) {
-        gameboard[x][y].innerHTML = minesLocated;
-        gameboard[x][y].classList
-    }
-
-    if (minesLocated > 0) {
         board[x][y].innerHTML = minesLocated;
-        board[x][y].classList
+        board[x][y].classList.add("c" + minesLocated.toString());
     }
 }
 
