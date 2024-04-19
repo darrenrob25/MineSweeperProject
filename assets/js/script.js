@@ -91,6 +91,7 @@ while (remainingMines > 0) {
     let x = Math.floor(Math.random() * rows);
     let y = Math.floor(Math.random() * columns);
     let id = x.toString() + "-" + y.toString();
+    // Loop utilised to stop mines being generated on the same square.
     if (!minesLocation.includes(id)) {
         minesLocation.push(id);
         minesLeft -= 1;
