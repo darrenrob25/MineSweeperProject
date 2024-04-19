@@ -178,6 +178,8 @@ a:hover {
     }
     footer {
         margin-top: 135px;
+        padding-bottom: 50px;
+        width: 100%;
     }
 
     p {
