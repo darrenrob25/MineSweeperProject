@@ -113,7 +113,7 @@ function checkMine(x, y) {
         return;
     }
 
-    gameBoard[x][y].classList.add("tile-clicked");
+    gameboard[x][y].classList.add("tile-clicked");
 
     let minesLocated = 0;
     //locate mines
