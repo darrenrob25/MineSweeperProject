@@ -91,7 +91,7 @@ align-items: center;
 }
 
 .tile-clicked {
-    background: darkgrey;
+    background: rgb(105, 105, 105);
 }
 
 #flag-button, 

@@ -84,7 +84,7 @@ function clickTile() {
 //Function to create mines.
 function createMines() {
     minesLocation.push("0-0")
-    minesLocation.push("2-5")
+    minesLocation.push("0-1")
     minesLocation.push("2-7")
     minesLocation.push("3-3")
     minesLocation.push("5-2")
@@ -109,6 +109,12 @@ function checkMine(x, y) {
     if (x < 0 || x >= rows || y < 0 || y >= columns) {
         return;
     }
+    if (gameboard[x][y].classList.contains("tile-clicked")) {
+        return;
+    }
+
+    gameBoard[x][y].classList.add("tile-clicked");
+
     let minesLocated = 0;
     //locate mines
     minesLocated += checkTile(x-1, y-1);
@@ -123,8 +129,18 @@ function checkMine(x, y) {
     minesLocated += checkTile(x, y+1);
 
     if (minesLocated > 0) {
-        gameboard[x][y].innerText = minesLocated;
-        gameboard[x][y].classList.add("c" + minesLocated.toString());
+        gameboard[x][y].innerText = minesLocated; // Adding number to cell
+        gameboard[x][y].classList.add("c" + minesLocated.toString()); // Changing number colour.
+    }
+    else {
+        checkMine (x-1, y-1); // Upper left
+        checkMine (x-1, y); // Upper
+        checkMine (x-1, y+1); //Upper Right 
+        checkMine (x+1, y-1); // bottom Left
+        checkMine (x+1, y); // bottom
+        checkMine (x+1, y+1); //bottom right
+        checkMine (x, y-1); //left
+        checkMine (x, y+1); //right
     }
 }
 
