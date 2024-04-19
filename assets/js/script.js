@@ -58,6 +58,9 @@ function startGame() {
 
 //Function to click tile.
 function clickTile() {
+    if (gameOver) {
+        return;
+    }
     let tile = this;
     if (flagEnabled) {
         if (tile.innerHTML == "") {
@@ -83,11 +86,15 @@ function clickTile() {
 
 //Function to create mines.
 function createMines() {
-    minesLocation.push("0-0")
-    minesLocation.push("0-1")
-    minesLocation.push("2-7")
-    minesLocation.push("3-3")
-    minesLocation.push("5-2")
+let remainingMines = minesCount;
+while (remainingMines > 0) {
+    let x = Math.floor(Math.random() * rows);
+    let y = Math.floor(Math.random() * columns);
+    let id = x.toString() + "-" + y.toString();
+    if (!minesLocation.includes(id)) {
+        minesLocation
+    }
+}
 }
 
 // Function to show mines when game over.
