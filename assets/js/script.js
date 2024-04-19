@@ -200,7 +200,3 @@ function showInstructions() {
         console.error("Element with ID 'gameboard' not found.");
     }
 }
-
-function playClick() {
-    
-}
