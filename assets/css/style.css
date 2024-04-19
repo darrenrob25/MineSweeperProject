@@ -49,7 +49,7 @@ h3 {
     color: white;
 }
 .navbar {
-    background-image:url(assets/media/banner-bg2.jpg);
+    background-image:url(../media/banner-bg2.jpg);
     padding-top: 0;
     margin-top: 0;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -112,7 +112,7 @@ align-items: center;
 }
 
 footer {
-    background-image:url(assets/media/banner-bg2.jpg);
+    background-image:url(../media/banner-bg2.jpg);
     padding-bottom: 25px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     justify-content: center;
