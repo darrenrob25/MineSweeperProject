@@ -106,7 +106,7 @@ function showMines() {
 //Function to check for mine
 function checkMine(x, y) {
     //checking if coordinates are out of the gameboard.
-    if (x < 0 || x <= rows || y < 0 || y >= columns) {
+    if (x < 0 || x >= rows || y < 0 || y >= columns) {
         return;
     }
     let minesLocated = 0;
@@ -123,14 +123,14 @@ function checkMine(x, y) {
     minesLocated += checkTile(x, y+1);
 
     if (minesLocated > 0) {
-        board[x][y].innerText = minesLocated;
-        board[x][y].classList.add("c" + minesLocated.toString());
+        gameboard[x][y].innerText = minesLocated;
+        gameboard[x][y].classList.add("c" + minesLocated.toString());
     }
 }
 
 function checkTile(x, y) {
     //checking if coordinates are out of the gameboard.
-    if (x < 0 || x <= rows || y < 0 || y >= columns) {
+    if (x < 0 || x >= rows || y < 0 || y >= columns) {
         return 0;
     }
     if (minesLocation.includes(x.toString() + "-" + y.toString())) {
@@ -145,8 +145,8 @@ function checkTile(x, y) {
 
 //Function to display instructions.
 function showInstructions() {
-    let gameBoard = document.getElementById("gameboard");
-    if (gameBoard) {
+    let gameboard = document.getElementById("gameboard");
+    if (gameboard) {
         let htmlContent = `
             <h3>How to Play</h3>
             <p>Start by clicking on a square in the grid. Each square will either reveal a number (indicating how many mines are adjacent) or a mine (which means you lose).</p>
@@ -155,7 +155,7 @@ function showInstructions() {
                 <h5 id="closeButton">Close</h5>
         `;
 
-        gameBoard.innerHTML = htmlContent;
+        gameboard.innerHTML = htmlContent;
 
         // Add event listener to the "Close" button
         let closeButton = document.getElementById("closeButton");
