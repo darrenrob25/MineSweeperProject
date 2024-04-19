@@ -123,14 +123,14 @@ function checkMine(x, y) {
     minesLocated += checkTile(x, y+1);
 
     if (minesLocated > 0) {
-        board[x][y].innerHTML = minesLocated;
+        board[x][y].innerText = minesLocated;
         board[x][y].classList.add("c" + minesLocated.toString());
     }
 }
 
-function checkTile(x, c) {
+function checkTile(x, y) {
     //checking if coordinates are out of the gameboard.
-    if (x < 0 || x <= rows || y < 0 || c >= columns) {
+    if (x < 0 || x <= rows || y < 0 || y >= columns) {
         return 0;
     }
     if(minesLocation.includes(x + "-" + y)) {
