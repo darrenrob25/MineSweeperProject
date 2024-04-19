@@ -9,7 +9,6 @@ let tilesClicked = 0; // total number of tiles clicked.
 let flagEnabled = false; //This is used to dictate whether we have clicked the flag button and whether its activated.
 
 let gameOver = false; //Used to decide whether game is over yet.
-let clickSound = new Audio('../assets/media/mario-coin-200bpm-82548.mp3');
 
 
 // Toggle flag button state and style
@@ -91,7 +90,6 @@ while (remainingMines > 0) {
     if (!minesLocation.includes(id)) {
         minesLocation.push(id);
         remainingMines -= 1;
-        clickSound.play();
     }
 }
 }
@@ -121,7 +119,6 @@ function checkMine(x, y) {
 
     gameboard[x][y].classList.add("tile-clicked");
     tilesClicked += 1;
-
     let minesLocated = 0;
     //locate mines
     minesLocated += checkTile(x-1, y-1);
@@ -202,4 +199,8 @@ function showInstructions() {
     } else {
         console.error("Element with ID 'gameboard' not found.");
     }
+}
+
+function playClick() {
+    
 }
