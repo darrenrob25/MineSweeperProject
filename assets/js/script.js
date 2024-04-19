@@ -115,6 +115,7 @@ function checkMine(x, y) {
 
     gameboard[x][y].classList.add("tile-clicked");
 
+
     let minesLocated = 0;
     //locate mines
     minesLocated += checkTile(x-1, y-1);
@@ -141,6 +142,10 @@ function checkMine(x, y) {
         checkMine (x+1, y+1); //bottom right
         checkMine (x, y-1); //left
         checkMine (x, y+1); //right
+    }
+    if (tilesClicked == rows * columns - minesCount) {
+        document.getElementsByTagName(h2).innerText = "You Win!";
+        gameOver = true;
     }
 }
 
