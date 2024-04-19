@@ -7,6 +7,7 @@ body {
     color: black;
 }
 
+/*Original Style*/
 #background-video {
     position: fixed;
     min-width: 100%;
@@ -162,3 +163,5 @@ a:hover {
 .c8 {
     color: black;
 }
+
+/*Responsive Styles*/
