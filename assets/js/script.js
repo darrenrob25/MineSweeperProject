@@ -92,7 +92,8 @@ while (remainingMines > 0) {
     let y = Math.floor(Math.random() * columns);
     let id = x.toString() + "-" + y.toString();
     if (!minesLocation.includes(id)) {
-        minesLocation
+        minesLocation.push(id);
+        minesLeft -= 1;
     }
 }
 }
