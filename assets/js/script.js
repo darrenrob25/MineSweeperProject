@@ -133,7 +133,7 @@ function checkTile(x, y) {
     if (x < 0 || x <= rows || y < 0 || y >= columns) {
         return 0;
     }
-    if(minesLocation.includes(x + "-" + y)) {
+    if (minesLocation.includes(x.tostring() + "-" + y.toString())) {
         return 1;
     }
     return 0;
