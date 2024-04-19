@@ -2,7 +2,7 @@ let gameboard = [];
 let rows = 8;
 let columns = 8;
 
-let minesCount = 5; //Total number of mines in game.
+let minesCount = 8; //Total number of mines in game.
 let minesLocation = []; //grid co-ordinates of mines.
 
 let tilesClicked = 0; // total number of tiles clicked.
@@ -12,16 +12,12 @@ let gameOver = false; //Used to decide whether game is over yet.
 
 
 
-//Event for the flag button.
+// Toggle flag button state and style
 function setFlag() {
-    if (flagEnabled) {
-        flagEnabled = false;
-        document.getElementById("flag-button").style.backgroundColor = "lightgray";
-    }
-    else {
-        flagEnabled = true;
-        document.getElementById("flag-button").style.backgroundColor = "rgb(173, 172, 172)";
-    }
+    flagEnabled = !flagEnabled; // Toggle flag state
+
+    let flagButton = document.getElementById("flag-button");
+    flagButton.style.backgroundColor = flagEnabled ? "rgb(173, 172, 172)" : "lightgray";
 }
 
 //Will initially start the game when we load the webpage.
@@ -73,7 +69,7 @@ function clickTile() {
         return;
     }
     if (minesLocation.includes(tile.id)) {
-        alert("You hit a mine!");
+        document.getElementById("mines-count").innerText = "You Lose!";
         gameOver = true;
         showMines();
         return;
