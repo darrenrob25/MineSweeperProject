@@ -165,3 +165,28 @@ a:hover {
 }
 
 /*Responsive Styles*/
+@media screen and (max-width: 1100px) {
+    #gameboard {
+        max-width: 250px; /* Adjust gameboard width for smaller screens */
+        max-height: 250px;
+        }
+
+    #gameboard div {
+        font-size: 90%; /* Reduce font size for smaller screens */
+        max-width: 29px;
+        max-height: 29px;
+    }
+    footer {
+        margin-top: 135px;
+    }
+
+    }
+
+
+
+@media screen and (max-width: 700px) {
+
+    #game-area{
+        width: 100%
+    }
+}
