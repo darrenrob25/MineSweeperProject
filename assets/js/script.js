@@ -81,7 +81,8 @@ function clickTile() {
         showMines();
         return;
     }
-    let coordinates = tile.id.split("-"); //will return the co-ordinates as an array.
+    //will return the co-ordinates as an array.
+    let coordinates = tile.id.split("-");
     let x = parseInt(coordinates[0]);
     let y = parseInt(coordinates[1]);
     checkMine(x, y);
