@@ -193,7 +193,8 @@ function showInstructions() {
             <p>Start by clicking on a square in the grid. Each square 
             will either reveal a number (indicating how many mines are 
             adjacent) or a mine (which means you lose).</p>
-            <p>You can mark suspected mines with flags using the flag button. Win the game by revealing all non-mine squares.</p>
+            <p>You can mark suspected mines with flags using the flag 
+            button. Win the game by revealing all non-mine squares.</p>
             <br>
             <h5 id="closeButton">Close</p>
         `;
