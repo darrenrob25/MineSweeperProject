@@ -49,3 +49,27 @@ Google fonts were used to import fonts for this project:
 
 * Silkscreen
 ![font example](assets/media/silkscreen-font.png)
+
+
+***
+
+## Features
+### Gameboard
+The gameboard, where the game is played, clicking on inndividual cells will check that cell for a mine.
+![Gameboard Screenshot](assets/media/gameboard-ss.png)
+
+### Flag Button
+When toggled on the flag button will place a flag on the gameboard, instead of checking if there's a mine. This can be used to mark suspected mines.
+![Gameboard Screenshot](assets/media/flagbutton-ss.png)
+
+### Restart/Refresh Button
+When clicked, this button will refresh the game - this can be utilised when game over or if you want to start from scratch.
+![Gameboard Screenshot](assets/media/flagbutton-ss.png)
+
+### How to Play Button
+When clicked, the button will replace the gameboard with instructions on how to play the game, which will help new users understand how to play.
+![Gameboard Screenshot](assets/media/howtoplay-ss.png)
+
+### Mine Count
+This displays the number of mines present on the board, it updated when you win or lose to tell you whether you have lost the game or won.
+![Gameboard Screenshot](assets/media/minecount-ss.png)
