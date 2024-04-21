@@ -107,3 +107,17 @@ The below metrics were returned:
 * The most complex function has a cyclomatic complexity value of 8 with the median being 3.
 
 ### User Stories Testing
+#### First Time User
+|Story No.|Result|Story/ Evidence|
+| ------------- | ------------- | ------------- |
+|1|Test Pass|As a first time user , <br> I want to be able to know how to start the game. <br> so that I can enjoy the game  <br><br>I know I am done when their are clear instructions shown to the user. <br><br>Evidence:<br>The gamepage has a clear how to play button, signposting people who do not know how to play.<br> ![how to play page](assets/media/howtoplay-ss.png)|
+|2|Test Pass |As a first time user, <br> I want to be able to know how to play the game <br> so that I know I am playing the game correctly. <br><br>I know this has been achieved when the user can view the game instructions. <br><br>Evidence:<br>In the how to play section, there is a clear outline on how to play the game.<br> ![instructions](assets/media/instructions.png)|
+|3|Test Pass |As a first time user, <br> I want to be able to know when I have hit a mine <br>so that I understand when the game is over <br><br>I know I am done there is a notification that the game is over. <br><br>Evidence:<br>A clear message is displayed when the game is over, whether you've won or lost.<br> ![lost game](assets/media/lost.png)|
+
+#### All Users
+|Story No.|Result|Story/ Evidence|
+| ------------- | ------------- | ------------- |
+|1|Test Pass |As a user, <br> I want to be able to play the game <br> so that I can enjoy the game.  <br><br>I know I am done, when the game is in a fully playable state.|<br><br>Evidence:<br>The game is in a playable state.<br> ![gameboard](assets/media/gameboard-ss.png)|
+|2|Test Pass |As a user, <br> I want to be able to restart the game <br> so that I can play again if I lose/win. <br><br>Evidence:<br>The reset buttion allows you to restart the game<br> ![reset button](assets/media/refresh-ss.png)|
+
+
