@@ -38,6 +38,14 @@ Below are the designs that I will use as a reference point to help build the sit
 ![Wireframe Design](assets/media/Wireframe.png)
 
 
-#### Color Scheme
+#### Color Choices
 The Colour palette was generated on [coolors](https://coolors.co/)
 ![colour palette](assets/media/collage.jpg)
+
+#### Font Choice
+Google fonts were used to import fonts for this project:
+* Press Start 2P
+![font example](assets/media/press-start-fonnt.png)
+
+* Silkscreen
+![font example](assets/media/silkscreen-font.png)
