@@ -235,6 +235,7 @@ function showInstructions() {
         gameboard.style.alignItems = "center";
         gameboard.style.textAlign = "center";
 
+        //adding text to gameboard container
         let htmlContent = `
             <h3 style="margin-bottom: 10px;">How to Play</h3>
             <p>Start by clicking on a square in the grid. Each square
