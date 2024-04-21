@@ -204,8 +204,8 @@ Upon further inspection its because the link in code started with / github pages
 - Programiz's recursion examples [programiz](https://www.programiz.com/javascript/recursion)
 
 ### Media
-Background Video - [Vecteezy](https://www.vecteezy.com/video/8042358-cube-geometric-video-background)
-Header and Footer Background - [Freepik](https://www.freepik.com/free-vector/abstract-pixel-rain-wallpaper_6195942.htm#fromView=search&page=1&position=6&uuid=3e800d14-f8ea-4279-b33d-1c6cfbd3b33b)
+* Background Video - [Vecteezy](https://www.vecteezy.com/video/8042358-cube-geometric-video-background)
+* Header and Footer Background - [Freepik](https://www.freepik.com/free-vector/abstract-pixel-rain-wallpaper_6195942.htm#fromView=search&page=1&position=6&uuid=3e800d14-f8ea-4279-b33d-1c6cfbd3b33b)
 
 *** 
 
