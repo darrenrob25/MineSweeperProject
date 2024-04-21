@@ -188,7 +188,7 @@ function countNeighboringMines(x, y) {
 
     return minesLocated;
 }
-
+// Showing the number of adjacent mines on tile.
 function displayNumberOnTile(x, y, number) {
     let tile = gameboard[x][y];
     tile.innerText = number;
