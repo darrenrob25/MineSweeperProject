@@ -171,7 +171,7 @@ function checkMines(x, y) {
         gameOver = true;
     }
 }
-
+// Ensuring mines cannot be generated outside of the grid.
 function isOutOfBounds(x, y) {
     return x < 0 || x >= rows || y < 0 || y >= columns;
 }
@@ -242,7 +242,7 @@ function showInstructions() {
         gameboard.style.alignItems = "center";
         gameboard.style.textAlign = "center";
 
-        //adding text to gameboard container
+        //adding HTML for game instructions to gameboard container
         let htmlContent = `
             <h3 style="margin-bottom: 10px;">How to Play</h3>
             <p>Start by clicking on a square in the grid. Each square
@@ -264,6 +264,7 @@ function showInstructions() {
                 location.reload();
             });
         }
+        // in case for some reason gameboard is not able to be found.
     } else {
         console.error("Element with ID 'gameboard' not found.");
     }
