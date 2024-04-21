@@ -1,18 +1,15 @@
 let tilesClicked = 0; // total number of tiles clicked.
 let flagEnabled = false; //used to see if we have clicked the flag button.
-
 let gameOver = false; //Used to decide whether game is over yet.
-
 //Game Perameters
 let gameboard = [];
 let rows = 8;
 let columns = 8;
-
 let minesCount = 8; //Total number of mines in game.
 let minesLocation = []; //grid co-ordinates of mines.
 
 // Toggle flag button state and style
-function setFlag() {
+function placeFlag() {
     flagEnabled = !flagEnabled; // Toggle flag state
 
     let flagButton = document.getElementById("flag-button");
@@ -46,7 +43,7 @@ function populateGameboard() {
 function startGame() {
     // Passing in the amount of mines to the HTML.
     document.getElementById("mines-count").innerHTML = minesCount;
-    document.getElementById("flag-button").addEventListener("click", setFlag);
+    document.getElementById("flag-button").addEventListener("click", placeFlag);
     document.getElementById("instructions")
     .addEventListener("click", showInstructions);
     document.getElementById("new-game").addEventListener("click", function() {
@@ -77,7 +74,7 @@ function clickTile() {
     if (minesLocation.includes(tile.id)) {
         document.getElementById("mines-count").innerText = "You Lose!";
         gameOver = true;
-        showMines();
+        revealMinesOnGameOver();
         return;
     }
     //will return the co-ordinates as an array.
@@ -102,14 +99,14 @@ while (remainingMines > 0) {
 }
 }
 
-// Function to show mines when game over.
-function showMines() {
+function revealMinesOnGameOver() {
+    // Display mines on the game board when game is over.
     for (let x = 0; x < rows; x++) {
         for (let y = 0; y < columns; y++) {
-            let tile = gameboard[x][y];
-            if (minesLocation.includes(tile.id)) {
-                tile.innerHTML = "💣";
-                tile.style.backgroundColor="red";
+            let currentTile = gameboard[x][y];
+            if (minesLocation.includes(currentTile.id)) {
+                currentTile.innerHTML = "💣";
+                currentTile.style.backgroundColor = "red";
             }
         }
     }
