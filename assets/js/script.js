@@ -6,7 +6,7 @@ let minesCount = 8; //Total number of mines in game.
 let minesLocation = []; //grid co-ordinates of mines.
 
 let tilesClicked = 0; // total number of tiles clicked.
-let flagEnabled = false; //This is used to dictate whether we have clicked the flag button and whether its activated.
+let flagEnabled = false; //used to see if we have clicked the flag button.
 
 let gameOver = false; //Used to decide whether game is over yet.
 
