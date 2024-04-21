@@ -139,3 +139,13 @@ The below metrics were returned:
 ### Fixed Bugs
 
 #### 
+#### Instructions Bug
+On the instructions on phone the close button was appearing on the right outside of the gameboard.
+To fix this I created a media query to decrease font size on smaller screen devices.
+
+#### CheckMines Function Bug
+The checkMines function was not working correctly, resulting in the gameboard disappearing.
+To fix this, I fixed the logic in the function, I had some errors in regards to mistyping variable names and logical issues.
+
+#### Background video Bug
+The 
