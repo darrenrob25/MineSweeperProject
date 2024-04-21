@@ -16,7 +16,9 @@ function setFlag() {
     flagEnabled = !flagEnabled; // Toggle flag state
 
     let flagButton = document.getElementById("flag-button");
-    flagButton.style.backgroundColor = flagEnabled ? "rgb(173, 172, 172)" : "lightgray";
+    flagButton.style.backgroundColor = flagEnabled
+    ? "rgb(173, 172, 172)"
+    : "lightgray";
 }
 
 //Will initially start the game when we load the webpage.
