@@ -20,7 +20,7 @@ function placeFlag() {
 
 //Will initially start the game when we load the webpage.
 window.onload = function() {
-    startGame();
+    initialiseGame();
 };
 
 //Populating the gameboard with cells
@@ -40,7 +40,7 @@ function populateGameboard() {
 }
 
 //Function to start game.
-function startGame() {
+function initialiseGame() {
     // Passing in the amount of mines to the HTML.
     document.getElementById("mines-count").innerHTML = minesCount;
     document.getElementById("flag-button").addEventListener("click", placeFlag);
@@ -81,7 +81,7 @@ function clickTile() {
     let coordinates = tile.id.split("-");
     let x = parseInt(coordinates[0]);
     let y = parseInt(coordinates[1]);
-    checkMine(x, y);
+    checkMines(x, y);
 }
 
 //Function to create mines.
@@ -113,7 +113,7 @@ function revealMinesOnGameOver() {
 }
 
 //Function to check for mine
-function checkMine(x, y) {
+function checkMines(x, y) {
     //checking if coordinates are out of the gameboard.
     if (x < 0 || x >= rows || y < 0 || y >= columns) {
         return;
@@ -143,14 +143,14 @@ function checkMine(x, y) {
             "c" + minesLocated.toString()); // Changing number colour.
     }
     else {
-        checkMine (x-1, y-1); // Upper left
-        checkMine (x-1, y); // Upper
-        checkMine (x-1, y+1); //Upper Right
-        checkMine (x+1, y-1); // bottom Left
-        checkMine (x+1, y); // bottom
-        checkMine (x+1, y+1); //bottom right
-        checkMine (x, y-1); //left
-        checkMine (x, y+1); //right
+        checkMines (x-1, y-1); // Upper left
+        checkMines (x-1, y); // Upper
+        checkMines (x-1, y+1); //Upper Right
+        checkMines (x+1, y-1); // bottom Left
+        checkMines (x+1, y); // bottom
+        checkMines (x+1, y+1); //bottom right
+        checkMines (x, y-1); //left
+        checkMines (x, y+1); //right
     }
     if (tilesClicked == rows * columns - minesCount) {
         document.getElementById("mines-count").innerText = "You Win!";
