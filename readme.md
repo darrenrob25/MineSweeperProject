@@ -117,7 +117,12 @@ The below metrics were returned:
 #### All Users
 |Story No.|Result|Story/ Evidence|
 | ------------- | ------------- | ------------- |
-|1|Test Pass |As a user, <br> I want to be able to play the game <br> so that I can enjoy the game.  <br><br>I know I am done, when the game is in a fully playable state.|<br><br>Evidence:<br>The game is in a playable state.<br> ![gameboard](assets/media/gameboard-ss.png)|
+|1|Test Pass |As a user, <br> I want to be able to play the game <br> so that I can enjoy the game.  <br><br>I know I am done, when the game is in a fully playable state.<br><br>Evidence:<br>The game is in a playable state.<br> ![gameboard](assets/media/gameboard-ss.png)|
 |2|Test Pass |As a user, <br> I want to be able to restart the game <br> so that I can play again if I lose/win. <br><br>Evidence:<br>The reset buttion allows you to restart the game<br> ![reset button](assets/media/refresh-ss.png)|
 
+### Accessibility Testing
+
+| Game |
+| ------- |
+| ![lighthouse result game page](assets/media/lighthouse-results.png) |
 
