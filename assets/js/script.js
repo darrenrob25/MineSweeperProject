@@ -56,7 +56,6 @@ function startGame() {
 
     //Populating the gameboard with cells
    populateGameboard();
-    console.log(gameboard);
 }
 
 //Function to click tile.
