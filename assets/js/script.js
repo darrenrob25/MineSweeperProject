@@ -143,7 +143,8 @@ function checkMine(x, y) {
 
     if (minesLocated > 0) {
         gameboard[x][y].innerText = minesLocated; // Adding number to cell
-        gameboard[x][y].classList.add("c" + minesLocated.toString()); // Changing number colour.
+        gameboard[x][y].classList.add(
+            "c" + minesLocated.toString()); // Changing number colour.
     }
     else {
         checkMine (x-1, y-1); // Upper left
