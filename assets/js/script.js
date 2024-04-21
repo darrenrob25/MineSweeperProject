@@ -149,7 +149,7 @@ function checkMine(x, y) {
     else {
         checkMine (x-1, y-1); // Upper left
         checkMine (x-1, y); // Upper
-        checkMine (x-1, y+1); //Upper Right 
+        checkMine (x-1, y+1); //Upper Right
         checkMine (x+1, y-1); // bottom Left
         checkMine (x+1, y); // bottom
         checkMine (x+1, y+1); //bottom right
