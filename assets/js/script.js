@@ -173,9 +173,6 @@ function checkTile(x, y) {
     return 0;
 }
 
-//Function to use the flag button.
-
-//function to reset game when button clicked.
 
 //Function to display instructions.
 function showInstructions() {
