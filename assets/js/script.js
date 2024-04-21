@@ -60,27 +60,51 @@ function clickTile() {
     if (gameOver) {
         return;
     }
+
     let tile = this;
     if (flagEnabled) {
-        if (tile.innerHTML == "") {
-            tile.innerHTML = "🚩";
-        }
-        else if (tile.innerHTML == "🚩") {
-            tile.innerHTML = "";
-        }
-        //to stop mine being triggered when adding a flag.
+        toggleFlagOnTile(tile);
         return;
     }
-    if (minesLocation.includes(tile.id)) {
-        document.getElementById("mines-count").innerText = "You Lose!";
-        gameOver = true;
-        revealMinesOnGameOver();
+
+    let coordinates = getCoordinatesFromTileId(tile.id);
+    let x = coordinates[0];
+    let y = coordinates[1];
+
+    if (isMineTile(tile)) {
+        handleMineClicked();
         return;
     }
-    //will return the co-ordinates as an array.
-    let coordinates = tile.id.split("-");
+
+    revealTileContent(x, y);
+}
+
+function toggleFlagOnTile(tile) {
+    if (tile.innerHTML === "") {
+        tile.innerHTML = "🚩";
+    } else if (tile.innerHTML === "🚩") {
+        tile.innerHTML = "";
+    }
+}
+
+function getCoordinatesFromTileId(tileId) {
+    let coordinates = tileId.split("-");
     let x = parseInt(coordinates[0]);
     let y = parseInt(coordinates[1]);
+    return [x, y];
+}
+
+function isMineTile(tile) {
+    return minesLocation.includes(tile.id);
+}
+
+function handleMineClicked() {
+    document.getElementById("mines-count").innerText = "You Lose!";
+    gameOver = true;
+    revealMinesOnGameOver();
+}
+
+function revealTileContent(x, y) {
     checkMines(x, y);
 }
 
