@@ -1,3 +1,8 @@
+//Will initially start the game when we load the webpage.
+window.onload = () => {
+    initialiseGame();
+};
+
 //Game State
 let tilesClicked = 0; // total number of tiles clicked.
 let flagEnabled = false; //used to see if we have clicked the flag button.
@@ -19,11 +24,6 @@ function placeFlag() {
     ? "rgb(173, 172, 172)"
     : "lightgray");
 }
-
-//Will initially start the game when we load the webpage.
-window.onload = function() {
-    initialiseGame();
-};
 
 //Populating the gameboard with cells
 function populateGameboard() {
