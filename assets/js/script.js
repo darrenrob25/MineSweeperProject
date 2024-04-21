@@ -138,47 +138,76 @@ function revealMinesOnGameOver() {
 
 //Function to check for mine
 function checkMines(x, y) {
-    //checking if coordinates are out of the gameboard.
-    if (x < 0 || x >= rows || y < 0 || y >= columns) {
-        return;
-    }
-    if (gameboard[x][y].classList.contains("tile-clicked")) {
+    // Check if the coordinates are out of bounds or if the tile has already been clicked
+    if (isOutOfBounds(x, y) || gameboard[x][y].classList.contains("tile-clicked")) {
         return;
     }
 
+    // Mark the current tile as clicked
     gameboard[x][y].classList.add("tile-clicked");
     tilesClicked += 1;
-    let minesLocated = 0;
-    //locate mines
-    minesLocated += isMine(x-1, y-1);
-    minesLocated += isMine(x-1, y);
-    minesLocated += isMine(x-1, y+1);
 
-    minesLocated += isMine(x+1, y-1);
-    minesLocated += isMine(x+1, y);
-    minesLocated += isMine(x+1, y+1);
-
-    minesLocated += isMine(x, y-1);
-    minesLocated += isMine(x, y+1);
+    // Count neighboring mines
+    let minesLocated = countNeighboringMines(x, y);
 
     if (minesLocated > 0) {
-        gameboard[x][y].innerText = minesLocated; // Adding number to cell
-        gameboard[x][y].classList.add(
-            "c" + minesLocated.toString()); // Changing number colour.
+        // Display the number of neighboring mines on the tile
+        displayNumberOnTile(x, y, minesLocated);
+    } else {
+        // Recursively check neighboring tiles if no mines are found
+        checkAdjacentTiles(x, y);
     }
-    else {
-        checkMines (x-1, y-1); // Upper left
-        checkMines (x-1, y); // Upper
-        checkMines (x-1, y+1); //Upper Right
-        checkMines (x+1, y-1); // bottom Left
-        checkMines (x+1, y); // bottom
-        checkMines (x+1, y+1); //bottom right
-        checkMines (x, y-1); //left
-        checkMines (x, y+1); //right
-    }
-    if (tilesClicked == rows * columns - minesCount) {
+
+    // Check if all non-mine tiles have been clicked to determine a win
+    if (tilesClicked === rows * columns - minesCount) {
         document.getElementById("mines-count").innerText = "You Win!";
         gameOver = true;
+    }
+}
+
+function isOutOfBounds(x, y) {
+    return x < 0 || x >= rows || y < 0 || y >= columns;
+}
+
+function countNeighboringMines(x, y) {
+    let minesLocated = 0;
+
+    // Define neighboring positions
+    const positions = [
+        [x - 1, y - 1], [x - 1, y], [x - 1, y + 1],
+        [x, y - 1],                 [x, y + 1],
+        [x + 1, y - 1], [x + 1, y], [x + 1, y + 1]
+    ];
+
+    // Count neighboring mines
+    for (const [nx, ny] of positions) {
+        if (!isOutOfBounds(nx, ny) && isMine(nx, ny)) {
+            minesLocated++;
+        }
+    }
+
+    return minesLocated;
+}
+
+function displayNumberOnTile(x, y, number) {
+    let tile = gameboard[x][y];
+    tile.innerText = number;
+    tile.classList.add("c" + number);
+}
+
+function checkAdjacentTiles(x, y) {
+    // Define neighboring positions
+    const positions = [
+        [x - 1, y - 1], [x - 1, y], [x - 1, y + 1],
+        [x, y - 1],                 [x, y + 1],
+        [x + 1, y - 1], [x + 1, y], [x + 1, y + 1]
+    ];
+
+    //Check neighboring tiles using recursive
+    for (const [nx, ny] of positions) {
+        if (!isOutOfBounds(nx, ny)) {
+            checkMines(nx, ny);
+        }
     }
 }
 
