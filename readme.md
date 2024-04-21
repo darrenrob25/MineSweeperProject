@@ -87,6 +87,13 @@ This displays the number of mines present on the board, it updated when you win 
 ***
 
 ## Testing
+### Principles of Testing
+Automated testing is like using a robot to check if your code works correctly without you having to do it manually. It's good for repetitive tasks, like making sure changes don't break existing features.
+
+Manual testing is like exploring and checking your code by hand, simulating how a real user might interact with it. It's great for trying out new things and finding issues that automated tests might miss.
+
+Both methods work together to make sure your code is solid. Automated testing saves time on routine checks, while manual testing lets you dig deeper and catch tricky problems.
+
 ### Validator Testing
 #### HTML
 No Errors were presented when passing the project through the official W3C validator.
@@ -198,9 +205,14 @@ Upon further inspection its because the link in code started with / github pages
 
 - Various Stack Overflow articles were used for guidance, most notably:
  - [Creating a Grid](https://stackoverflow.com/questions/54007153/how-to-generate-grid-x-y-coordinates)
+ 
  - [Incrementing Grids](https://stackoverflow.com/questions/56657660/increment-specific-value-of-element-in-a-2d-array-js)
 
 - Programiz's recursion examples [programiz](https://www.programiz.com/javascript/recursion)
+
+### Media
+* Background Video - [Vecteezy](https://www.vecteezy.com/video/8042358-cube-geometric-video-background)
+* Header and Footer Background - [Freepik](https://www.freepik.com/free-vector/abstract-pixel-rain-wallpaper_6195942.htm#fromView=search&page=1&position=6&uuid=3e800d14-f8ea-4279-b33d-1c6cfbd3b33b)
 
 *** 
 
