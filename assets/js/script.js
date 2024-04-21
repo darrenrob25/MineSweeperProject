@@ -55,7 +55,7 @@ function startGame() {
     createMines();
 
     //Populating the gameboard with cells
-   populateGameboard()
+   populateGameboard();
     console.log(gameboard);
 }
 
@@ -172,7 +172,6 @@ function checkTile(x, y) {
     }
     return 0;
 }
-
 
 //Function to display instructions.
 function showInstructions() {
