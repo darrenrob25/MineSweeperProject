@@ -26,6 +26,22 @@ window.onload = function() {
     startGame();
 };
 
+//Populating the gameboard with cells
+function populateGameboard() {
+    for (let x = 0; x < rows; x++) {
+        let row = [];
+        for (let y = 0; y < columns; y++) {
+            //Setting Div id's to grid co-ordinates.
+            let tile = document.createElement("div");
+            tile.id = x.toString() + "-" + y.toString();
+            document.getElementById("gameboard").append(tile);
+            row.push(tile);
+            tile.addEventListener("click", clickTile);
+        }
+        gameboard.push(row);
+    }
+}
+
 //Function to start game.
 function startGame() {
     // Passing in the amount of mines to the HTML.
@@ -39,18 +55,7 @@ function startGame() {
     createMines();
 
     //Populating the gameboard with cells
-    for (let x = 0; x < rows; x++) {
-        let row = [];
-        for (let y = 0; y < columns; y++) {
-            //Setting Div id's to grid co-ordinates.
-            let tile = document.createElement("div");
-            tile.id = x.toString() + "-" + y.toString();
-            document.getElementById("gameboard").append(tile);
-            row.push(tile);
-            tile.addEventListener("click", clickTile);
-        }
-        gameboard.push(row);
-    }
+   populateGameboard()
     console.log(gameboard);
 }
 
