@@ -105,12 +105,14 @@ function isMineTile(tile) {
     return minesLocation.includes(tile.id);
 }
 
+//Function to handle when a mine is clicked - aka gameOver.
 function handleMineClicked() {
     document.getElementById("mines-count").innerText = "You Lose!";
     gameOver = true;
     revealMinesOnGameOver();
 }
 
+// Handling showing tile content.
 function revealTileContent(x, y) {
     checkMines(x, y);
 }
