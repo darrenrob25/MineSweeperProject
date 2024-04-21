@@ -198,6 +198,7 @@ Upon further inspection its because the link in code started with / github pages
 
 - Various Stack Overflow articles were used for guidance, most notably:
  - [Creating a Grid](https://stackoverflow.com/questions/54007153/how-to-generate-grid-x-y-coordinates)
+ 
  - [Incrementing Grids](https://stackoverflow.com/questions/56657660/increment-specific-value-of-element-in-a-2d-array-js)
 
 - Programiz's recursion examples [programiz](https://www.programiz.com/javascript/recursion)
