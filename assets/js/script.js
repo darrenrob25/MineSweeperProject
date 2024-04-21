@@ -80,20 +80,21 @@ function clickTile() {
 
     revealTileContent(x, y);
 }
+// Creates co-ordinates.
+function getCoordinatesFromTileId(tileId) {
+    let coordinates = tileId.split("-");
+    let x = parseInt(coordinates[0]);
+    let y = parseInt(coordinates[1]);
+    return [x, y];
+}
 
+// Adds and removes flag from tile.
 function toggleFlagOnTile(tile) {
     if (tile.innerHTML === "") {
         tile.innerHTML = "🚩";
     } else if (tile.innerHTML === "🚩") {
         tile.innerHTML = "";
     }
-}
-
-function getCoordinatesFromTileId(tileId) {
-    let coordinates = tileId.split("-");
-    let x = parseInt(coordinates[0]);
-    let y = parseInt(coordinates[1]);
-    return [x, y];
 }
 
 function isMineTile(tile) {
