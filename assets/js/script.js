@@ -1,15 +1,15 @@
+let tilesClicked = 0; // total number of tiles clicked.
+let flagEnabled = false; //used to see if we have clicked the flag button.
+
+let gameOver = false; //Used to decide whether game is over yet.
+
+//Game Perameters
 let gameboard = [];
 let rows = 8;
 let columns = 8;
 
 let minesCount = 8; //Total number of mines in game.
 let minesLocation = []; //grid co-ordinates of mines.
-
-let tilesClicked = 0; // total number of tiles clicked.
-let flagEnabled = false; //used to see if we have clicked the flag button.
-
-let gameOver = false; //Used to decide whether game is over yet.
-
 
 // Toggle flag button state and style
 function setFlag() {
