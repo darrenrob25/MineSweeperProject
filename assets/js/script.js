@@ -10,8 +10,12 @@ let gameOver = false; //Used to decide whether game is over yet.
 
 //Game Perameters
 let gameboard = [];
+
+//Gameboard size
 let rows = 8;
 let columns = 8;
+
+// Mine perameters
 let minesCount = 8; //Total number of mines in game.
 let minesLocation = []; //grid co-ordinates of mines.
 
