@@ -126,16 +126,16 @@ function checkMines(x, y) {
     tilesClicked += 1;
     let minesLocated = 0;
     //locate mines
-    minesLocated += checkTile(x-1, y-1);
-    minesLocated += checkTile(x-1, y);
-    minesLocated += checkTile(x-1, y+1);
+    minesLocated += isMine(x-1, y-1);
+    minesLocated += isMine(x-1, y);
+    minesLocated += isMine(x-1, y+1);
 
-    minesLocated += checkTile(x+1, y-1);
-    minesLocated += checkTile(x+1, y);
-    minesLocated += checkTile(x+1, y+1);
+    minesLocated += isMine(x+1, y-1);
+    minesLocated += isMine(x+1, y);
+    minesLocated += isMine(x+1, y+1);
 
-    minesLocated += checkTile(x, y-1);
-    minesLocated += checkTile(x, y+1);
+    minesLocated += isMine(x, y-1);
+    minesLocated += isMine(x, y+1);
 
     if (minesLocated > 0) {
         gameboard[x][y].innerText = minesLocated; // Adding number to cell
@@ -158,15 +158,17 @@ function checkMines(x, y) {
     }
 }
 
-function checkTile(x, y) {
-    //checking if coordinates are out of the gameboard.
+function isMine(x, y) {
+    // Check if the given coordinates (x, y) are out of bounds
     if (x < 0 || x >= rows || y < 0 || y >= columns) {
-        return 0;
+        return false; // Out of bounds, not a mine
     }
-    if (minesLocation.includes(x.toString() + "-" + y.toString())) {
-        return 1;
-    }
-    return 0;
+
+    // Construct the mine ID in the format "x-y"
+    const id = `${x}-${y}`;
+
+    // Check if the mineLocation array includes the constructed ID
+    return minesLocation.includes(id);
 }
 
 //Function to display instructions.
