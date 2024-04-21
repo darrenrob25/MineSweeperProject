@@ -87,6 +87,13 @@ This displays the number of mines present on the board, it updated when you win 
 ***
 
 ## Testing
+### Principles of Testing
+Automated testing is like using a robot to check if your code works correctly without you having to do it manually. It's good for repetitive tasks, like making sure changes don't break existing features.
+
+Manual testing is like exploring and checking your code by hand, simulating how a real user might interact with it. It's great for trying out new things and finding issues that automated tests might miss.
+
+Both methods work together to make sure your code is solid. Automated testing saves time on routine checks, while manual testing lets you dig deeper and catch tricky problems.
+
 ### Validator Testing
 #### HTML
 No Errors were presented when passing the project through the official W3C validator.
