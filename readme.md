@@ -183,5 +183,24 @@ Upon further inspection its because the link in code started with / github pages
 
  The live link can be found here - [Minesweeper](https://darrenrob25.github.io/MineSweeperProject/)
 
+ ***
+
+ ## Credits
+
+ ### Content
+ - Processes from the CI Love Running project was used to help create this website - [CI Love Running](https://code-institute-org.github.io/love-running-2.0/index.html)
+
+- Processes from the Love Maths project was used to help create this website - [CI Love Maths](https://code-institute-org.github.io/love-maths/)
+
+- HTML, CSS and Javascript code help was taken from w3schools - [W3Schools](https://www.w3schools.com/)
+
+- Bootstrap was used to help with the CSS [Bootstrap](https://getbootstrap.com/)
+
+- Various Stack Overflow articles were used for guidance, most notably:
+ - [Creating a Grid](https://stackoverflow.com/questions/54007153/how-to-generate-grid-x-y-coordinates)
+ - [Incrementing Grids](https://stackoverflow.com/questions/56657660/increment-specific-value-of-element-in-a-2d-array-js)
+
+- Programiz's recursion examples [programiz](https://www.programiz.com/javascript/recursion)
+
 *** 
 
