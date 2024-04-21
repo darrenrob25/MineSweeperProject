@@ -126,3 +126,16 @@ The below metrics were returned:
 | ------- |
 | ![lighthouse result game page](assets/media/lighthouse-results.png) |
 
+### Manual Testing
+* I have tested that the project works in different web browsers.
+* I have tested that the project is responsive and works with different device sizes and it looks good and functions correctly.
+* I have tested all links and they work correctly.
+* I have tested that the game works correctly and can be played.
+* I have tested that the flag function works and can be selected and deselected.
+* I have tested the restart game function, which works correctly.
+* I have tested opening and closing the instructions button.
+* I have tested the game by playing and both winning and losing.
+
+### Fixed Bugs
+
+#### 
