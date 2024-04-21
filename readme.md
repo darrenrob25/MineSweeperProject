@@ -154,7 +154,7 @@ Upon further inspection its because the link in code started with / github pages
 ***
 ### Cloning & Forking
 #### Fork
-1. On GitHub.com, navigate to the [Minesweeper](https://github.com/dlhamilton/Bomb-Catcher) repository.
+1. On GitHub.com, navigate to the [Minesweeper](https://github.com/darrenrob25/MineSweeperProject) repository.
 2. In the top-right corner of the page, click Fork.
 3. By default, forks are named the same as their parent repositories. You can change the name of the fork to distinguish it further.
 4. Add a description to your fork.
