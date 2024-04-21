@@ -22,7 +22,7 @@ function setFlag() {
 }
 
 //Will initially start the game when we load the webpage.
-window.onload = function() { 
+window.onload = function() {
     startGame();
 }
 
