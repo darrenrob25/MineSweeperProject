@@ -97,3 +97,13 @@ https://validator.w3.org/nu/?doc=https%3A%2F%2Fdarrenrob25.github.io%2FMineSweep
 No errors were found when passing the project through the official Jigsaw validator.
 
 https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdarrenrob25.github.io%2FMineSweeperProject%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
+
+#### JS
+There were no errors when passing the js through the official JSHint Validator.
+The below metrics were returned:
+* There are 12 functions in this file.
+* The function with the largest signature takes 2 arguments, the median is 0.
+* The largest function has 29 statements in it, the median is 6.5
+* The most complex function has a cyclomatic complexity value of 8 with the median being 3.
+
+### User Stories Testing
