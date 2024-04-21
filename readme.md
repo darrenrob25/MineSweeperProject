@@ -87,3 +87,13 @@ This displays the number of mines present on the board, it updated when you win 
 ***
 
 ## Testing
+### Validator Testing
+#### HTML
+No Errors were presented when passing the project through the official W3C validator.
+
+https://validator.w3.org/nu/?doc=https%3A%2F%2Fdarrenrob25.github.io%2FMineSweeperProject%2F
+
+#### CSS
+No errors were found when passing the project through the official Jigsaw validator.
+
+https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdarrenrob25.github.io%2FMineSweeperProject%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
