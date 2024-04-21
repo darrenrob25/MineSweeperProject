@@ -1,6 +1,8 @@
+//Game State
 let tilesClicked = 0; // total number of tiles clicked.
 let flagEnabled = false; //used to see if we have clicked the flag button.
 let gameOver = false; //Used to decide whether game is over yet.
+
 //Game Perameters
 let gameboard = [];
 let rows = 8;
