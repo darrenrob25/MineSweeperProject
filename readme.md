@@ -12,7 +12,7 @@ The live link can be found at - [MineSweeper](https://darrenrob25.github.io/Mine
 ### Project Goals
 * The goal of this project is to make a fun recreation of the minesweeper game within the browser.
 
-* It has beeen designed to be easy to play and enjoyable.
+* It has beeen designed to be easy to play and enjoyable. 
 
 ### User Stories
 #### First Time User
